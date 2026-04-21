@@ -2,17 +2,17 @@
 
 Cosense 用のページアイコンを URL のパスから動的に生成する Cloudflare Worker。
 
-本番URL: https://icon.soui.dev/ （ビジュアルエディタ）
+本番URL: https://icon.dclab.app/ （ビジュアルエディタ）
 
 ## 使い方
 
 末尾セグメントがテキスト（`.svg` 拡張子は任意）、それ以前のセグメントがオプション。
 
 ```
-https://icon.soui.dev/B4ゼミ.svg
-https://icon.soui.dev/bg-1e293b/fg-fff/B4ゼミ.svg
-https://icon.soui.dev/bg:red,fg:white/size:72/Hello.svg
-https://icon.soui.dev/bg-111/fg-fae/radius-24/B4\nゼミ.svg
+https://icon.dclab.app/B4ゼミ.svg
+https://icon.dclab.app/bg-1e293b/fg-fff/B4ゼミ.svg
+https://icon.dclab.app/bg:red,fg:white/size:72/Hello.svg
+https://icon.dclab.app/bg-111/fg-fae/radius-24/B4\nゼミ.svg
 ```
 
 - オプションは `/` でも `,` でも区切れる
@@ -106,4 +106,4 @@ npm run deploy    # 手動デプロイ（通常はGitHub Actionsが走る）
 3. GitHub リポジトリの Secrets に以下を設定
    - `CLOUDFLARE_API_TOKEN`
    - `CLOUDFLARE_ACCOUNT_ID`
-4. 初回デプロイ後、`wrangler.toml` の `routes` で `icon.soui.dev` がカスタムドメインとして紐付く
+4. 初回デプロイ後、`wrangler.toml` の `routes` で `icon.dclab.app` がカスタムドメインとして紐付く
