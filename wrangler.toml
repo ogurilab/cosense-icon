@@ -6,8 +6,8 @@ compatibility_flags = ["nodejs_compat"]
 # icon.soui.dev を Cloudflare に登録してから有効化する。
 # Cloudflare ダッシュボードで soui.dev ゾーンが存在している必要あり。
 [[routes]]
-pattern = "icon.soui.dev/*"
-zone_name = "soui.dev"
+pattern = "icon.dclab.app/*"
+zone_name = "dclab.app"
 
 [observability]
 enabled = true
